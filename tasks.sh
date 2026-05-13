@@ -18,15 +18,15 @@ do
 		read -p "date: " dt
 		echo "$task | $pr | $dt" >> "$tasks_file"
 		echo "added"
-	elif [ "$t" == "2" ] ; then
+	elif [ "$x" == "2" ] ; then
 		cat "$tasks_file"
-	elif [ "$t" == "3" ] ; then
+	elif [ "$x" == "3" ] ; then
 		cat "$tasks_file"
 		read -p "enter task to delete: " del
 		grep -v "$del" "$tasks_file" > temp.txt
 		mv temp.txt "$tasks_file"
 		echo "deleted"
-	elif [ "$t" == "0" ] ; then
+	elif [ "$x" == "0" ] ; then
 		break
 	else
 		echo "wrong"
