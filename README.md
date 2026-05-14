@@ -38,7 +38,6 @@ The project provides:
 
 Give execute permission:
 
-bash
 chmod +x *.sh
 
 example to run this programme: ( bash sentinel.sh or ./sentinel.sh )
